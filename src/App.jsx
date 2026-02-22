@@ -138,18 +138,32 @@ export default function App() {
         )}
       </main>
 
-      <footer className="text-center text-xs text-gray-400 py-6 px-4">
-        Kein Rechtsanspruch auf Richtigkeit oder Vollständigkeit der Angaben.
-        Verbindliche Auskunft erteilt Ihr Netzbetreiber oder die{' '}
-        <a
-          href="https://www.bundesnetzagentur.de"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline"
-        >
-          Bundesnetzagentur
-        </a>
-        .
+      <footer className="border-t border-gray-100 mt-4 py-8 px-4">
+        <div className="max-w-2xl mx-auto flex flex-col sm:flex-row justify-between gap-6 text-xs text-gray-400">
+          <p className="flex-1">
+            Kein Rechtsanspruch auf Richtigkeit oder Vollständigkeit der Angaben.
+            Verbindliche Auskunft erteilt Ihr Netzbetreiber oder die{' '}
+            <a
+              href="https://www.bundesnetzagentur.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              Bundesnetzagentur
+            </a>
+            .
+          </p>
+          <div className="sm:text-right shrink-0">
+            <p className="font-semibold text-gray-500 mb-1">Impressum</p>
+            <p>Privates, nicht-kommerzielles Angebot</p>
+            <a
+              href="mailto:svcoelln@gmail.com"
+              className="underline hover:text-gray-600"
+            >
+              svcoelln@gmail.com
+            </a>
+          </div>
+        </div>
       </footer>
     </div>
   );
